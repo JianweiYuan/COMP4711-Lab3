@@ -21,6 +21,7 @@ and open the template in the editor.
         $first->add_grade(65); 
         $first->add_grade(75);
         $first->add_grade(55);
+        $first->add_status('status','Freshman');
         $students['j123'] = $first;
         
         
@@ -32,7 +33,8 @@ and open the template in the editor.
         $second->add_email('work2','albert@physics.mit.edu');
         $second->add_grade(95);
         $second->add_grade(80);
-        $second->add_grade(50); 
+        $second->add_grade(50);
+        $second->add_status('status','Junior');
         $students['a456'] = $second;
                 
         
@@ -44,6 +46,7 @@ and open the template in the editor.
         $third->add_grade(95);
         $third->add_grade(95);
         $third->add_grade(95);
+        $third->add_status('status','Senior');
         $students['b789'] = $third;
         ksort($students);
 
