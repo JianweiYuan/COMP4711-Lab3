@@ -9,6 +9,14 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title></title>
     </head>
+    <style>
+        body{
+            border: 1px solid black;
+            text-align: center;
+            color: green;
+            font-size: 10px;
+        }
+    </style>
     <body>
         <?php
        include('Student.php');
@@ -50,16 +58,18 @@ and open the template in the editor.
         $students['b789'] = $third;
         
         
-        $fourth = new Student();
+          $fourth = new Student();
         $fourth->surname = "Wang"; 
         $fourth->first_name = "Bobo"; 
-        $fourth->add_email('home','@qq.com');
+        $fourth->add_email('home','qq@qq.com');
         $fourth->add_email('work1','a_einstein@bcit.ca');
         $fourth->add_grade(95);
         $fourth->add_grade(95);
         $fourth->add_grade(95);
         $fourth->add_status('status','Senior');
         $students['d369'] = $fourth;
+        
+     
         ksort($students);
 
        foreach($students as $student) echo $student->toString(); 
